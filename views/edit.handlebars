@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 400px;
+        margin: auto;
+        background-color:  #395457;
+        padding: 10px;
+        border: 2px solid  #6c8e91;
+    }
+    h1{
+        color: #fff;
+    }
+    label{
+        color: #fff;
+    }
+    input{
+        width: 380px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .btn0{
+        width: 100px;
+        padding: 8px;
+        border: none;
+        background-color: #0b8fd6;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div>
+            <h1>Edit Friends Information</h1>
+        </div>
+        <form action="/update?_method=PUT" method="POST">
+        <label for="name">Name</label>
+        <div>
+            <input type="hidden" value="{{post._id}}" name="id">
+            <input value="{{post.name}}" type="text" name="name" id="">
+        </div>
+        <label for="phone">Phone</label>
+        <div>
+            <input value="{{post.phone}}" type="text" name="phone" id="">
+        </div>
+        <div>
+            <button type="submit" class="btn0">Update</button>
+        </div>
+    </form>
+        <div class="btn">
+            <a href="/"><button class="btn0">Back</button></a>
+        </div>
+    </div>
+</body>
+</html>

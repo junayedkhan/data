@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 400px;
+        margin: auto;
+        background-color: #395457;
+        padding: 10px;
+        border: 2px solid  #6c8e91;
+    }
+    h1{
+        color: #fff;
+    }
+    label{
+        color: #fff;
+    }
+    input{
+        width: 380px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .btn0{
+        width: 100px;
+        padding: 8px;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #0b8fd6;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <div>
+            <h1>Create Friends Information</h1>
+        </div>
+        <form action="/add" method="POST">
+            <label for="text">Name</label>
+            <div>
+                <input type="text" name="name" id="">
+            </div>
+            <label for="Phone">Phone</label>
+            <div>
+                <input type="text" name="phone" id="">
+            </div>
+            <div>
+                <button type="submit" class="btn0">Create</button>
+            </div>
+        </form>
+    </div>
+        <div class="btn">
+            <a href="/"><button class="btn0">Back</button></a>
+        </div>
+    </div>
+</body>
+</html>
